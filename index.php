@@ -72,9 +72,6 @@ if ($this->params->get('templateColor'))
 		border-top: 3px solid ' . $this->params->get('templateColor') . ';
 		background-color: ' . $this->params->get('templateBackgroundColor') . ';
 	}
-	a {
-		color: ' . $this->params->get('templateColor') . ';
-	}
 	.nav-list > .active > a,
 	.nav-list > .active > a:hover,
 	.dropdown-menu li > a:hover,

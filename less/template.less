@@ -137,10 +137,44 @@ body.site.fluid{
 /* Nav */
 .navigation{
 	padding: 5px 0;
-	border-top: 3px solid rgba(0, 0, 0, 0.075);
-	border-bottom: 3px solid rgba(0, 0, 0, 0.075);
-	margin-bottom: 30px;
+	border-top: 2px solid rgba(0, 0, 0, 0.075);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.075);
+	margin-bottom: 5px;
+
+	.menu {
+		display: flex;
+	}
+
+	.menu > li {
+		background-color: #000;
+		font-family: 'Oswald', sans-serif;
+		font-size: 14pt;
+		& > a {
+			color: #fff;
+			display: block;
+			text-align: center;
+			padding: 16px;
+			&:hover {
+				color: #000;
+				background-color: #0088cc;
+				display: block;
+			}
+		}
+		&:first-child {
+			border-radius: 10px 0 0 10px;
+			& > a:hover {
+				border-radius: 10px 0 0 10px;
+			}
+		}
+		&:last-child {
+			border-radius: 0 10px 10px 0;
+			& > a:hover {
+				border-radius: 0 10px 10px 0;
+			}
+		}
+	}
 }
+
 .navigation .nav-pills{
 	margin-bottom: 0;
 }
