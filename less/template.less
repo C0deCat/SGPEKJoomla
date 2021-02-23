@@ -137,26 +137,29 @@ body.site.fluid{
 /* Nav */
 .navigation{
 	padding: 5px 0;
-	border-top: 2px solid rgba(0, 0, 0, 0.075);
-	border-bottom: 2px solid rgba(0, 0, 0, 0.075);
-	margin-bottom: 5px;
+	border-top: 0px solid rgba(0, 0, 0, 0.075);
+	border-bottom: 0px solid rgba(0, 0, 0, 0.075);
+	margin-bottom: 0px;
 
 	.menu {
 		display: flex;
 	}
 
 	.menu > li {
-		background-color: #000;
+		background-color: @signaturecolor;
 		font-family: 'Oswald', sans-serif;
 		font-size: 14pt;
+		&.current {
+			background-color: lighten(@signaturecolor, 10%);
+		}
 		& > a {
-			color: #fff;
+			color: @white;
 			display: block;
 			text-align: center;
 			padding: 16px;
 			&:hover {
-				color: #000;
-				background-color: #0088cc;
+				color: @white;
+				background-color: lighten(@signaturecolor, 10%);
 				display: block;
 			}
 		}
@@ -342,8 +345,8 @@ figcaption {
 		display: none; // none by default, but block on "open" of the menu
 		float: left;
 		min-width: 160px;
-		padding: 5px 0;
-		margin: 2px 0 0; // override default ul
+		padding: 3px 0;
+		margin: 6px 0 0; // override default ul
 		list-style: none;
 		background-color: @dropdownBackground;
 		border: 1px solid #ccc; // Fallback for IE7-8
@@ -372,7 +375,7 @@ figcaption {
 			display: block;
 			padding: 3px 20px;
 			clear: both;
-			font-size: @baseFontSize;
+			font-size: 12pt;
 			font-weight: normal;
 			line-height: @baseLineHeight;
 			color: @dropdownLinkColor;
@@ -601,6 +604,98 @@ figcaption {
 	}
 	.nav-collapse .nav > li.active > a:hover {
 		color: #555;
+	}
+
+	//changing navigation
+	.navigation{
+		.menu {
+			display: block;
+		}
+	
+		.menu > li {
+			margin-bottom: 5px;
+			background-color: @signaturecolor;
+			font-size: 12pt;
+			&.current {
+				background-color: lighten(@signaturecolor, 10%);
+			}
+			& > a {
+				color: @white;
+				display: block;
+				text-align: center;
+				padding: 8px;
+				&:hover {
+					color: @white;
+					background-color: lighten(@signaturecolor, 10%);
+					display: block;
+				}
+			}
+			&:first-child {
+				border-radius: 0;
+				& > a:hover {
+					border-radius: 0;
+				}
+			}
+			&:last-child {
+				border-radius: 0;
+				& > a:hover {
+					border-radius: 0;
+				}
+			}
+
+			.nav-child::before {
+				content: none;
+			}
+			.nav-child::after {
+				content: none;
+			}
+		}
+		
+		.nav-child {
+			position: static;
+			top: 95%;
+			left: 0;
+			z-index: 0;
+			display: block; // none by default, but block on "open" of the menu
+			float: none;
+			min-width: 160px;
+			padding: 2px 0;
+			margin: 0px 0 0; // override default ul
+			list-style: none;
+			background-color: darken(@dropdownBackground, 10%);
+			border: 0px solid #ccc; // Fallback for IE7-8
+			border: 0px solid @dropdownBorder;
+			*border-right-width: 2px;
+			*border-bottom-width: 2px;
+			.border-radius(0);
+			.box-shadow(0 0px 0px rgba(0,0,0,.2));
+			-webkit-background-clip: padding-box;
+			 -moz-background-clip: padding;
+				  background-clip: padding-box;
+	
+			// Aligns the dropdown menu to right
+			&.pull-right {
+				right: 0;
+				left: auto;
+			}
+	
+			// Dividers (basically an hr) within the dropdown
+			.divider {
+				.nav-divider(@dropdownDividerTop, @dropdownDividerBottom);
+			}
+	
+			// Links within the dropdown menu
+			a {
+				display: block;
+				padding: 3px 20px;
+				clear: both;
+				font-size: 11pt;
+				font-weight: normal;
+				line-height: @baseLineHeight;
+				color: @dropdownLinkColor;
+				white-space: nowrap;
+			}
+		}
 	}
 }
 @media (min-width: 768px) and (max-width: 979px) {
