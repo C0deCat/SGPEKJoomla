@@ -7217,6 +7217,15 @@ body.site.fluid {
 .navigation .nav-pills {
 	margin-bottom: 0;
 }
+.sidebar-nav .menu {
+	background-color: gray;
+}
+.sidebar-nav .menu > li {
+	font-size: 13pt;
+	color: #4194D1;
+	background-color: gray;
+	padding: 6px;
+}
 .hero-unit {
 	background-color: #08C;
 }
