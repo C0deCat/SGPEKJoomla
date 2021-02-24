@@ -184,13 +184,41 @@ body.site.fluid{
 
 .sidebar-nav {
 	.menu {
-		background-color: gray;
+		
 	}
 	.menu > li {
-		font-size: 13pt;
-		color: @signaturecolor;
-		background-color: gray;
-		padding: 6px;
+		font-size: 12pt;
+		background-color: @signaturecolor;
+
+		& > a {
+			color: @white;
+			display: block;
+			padding: 6px;
+			&:hover {
+				color: @white;
+				background-color: lighten(@signaturecolor, 10%);
+				display: block;
+			}
+		}
+		&:first-child {
+			border-radius: 6px 6px 0 0;
+			& > a:hover {
+				border-radius: 6px 6px 0 0;
+			}
+		}
+		&:last-child {
+			border-radius: 0 0 6px 6px;
+			& > a:hover {
+				border-radius: 0 0 6px 6px;
+			}
+		}
+		
+	}
+	.nav-child {
+		background-color: @grayLighter;
+		font-size: 11pt;
+		padding: 4px;
+		border-left: 3px solid @signaturecolor;
 	}
 }
 /* Hero Banner Unit */

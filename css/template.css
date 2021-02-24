@@ -7217,14 +7217,37 @@ body.site.fluid {
 .navigation .nav-pills {
 	margin-bottom: 0;
 }
-.sidebar-nav .menu {
-	background-color: gray;
-}
 .sidebar-nav .menu > li {
-	font-size: 13pt;
-	color: #4194D1;
-	background-color: gray;
+	font-size: 12pt;
+	background-color: #4194D1;
+}
+.sidebar-nav .menu > li > a {
+	color: #fff;
+	display: block;
 	padding: 6px;
+}
+.sidebar-nav .menu > li > a:hover {
+	color: #fff;
+	background-color: #6aabdb;
+	display: block;
+}
+.sidebar-nav .menu > li:first-child {
+	border-radius: 6px 6px 0 0;
+}
+.sidebar-nav .menu > li:first-child > a:hover {
+	border-radius: 6px 6px 0 0;
+}
+.sidebar-nav .menu > li:last-child {
+	border-radius: 0 0 6px 6px;
+}
+.sidebar-nav .menu > li:last-child > a:hover {
+	border-radius: 0 0 6px 6px;
+}
+.sidebar-nav .nav-child {
+	background-color: #eee;
+	font-size: 11pt;
+	padding: 4px;
+	border-left: 3px solid #4194D1;
 }
 .hero-unit {
 	background-color: #08C;
