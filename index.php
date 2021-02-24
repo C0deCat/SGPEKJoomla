@@ -38,7 +38,9 @@ else
 }
 
 // Add JavaScript Frameworks
+JHtml::_('jquery.framework');
 JHtml::_('bootstrap.framework');
+
 
 // Add template js
 JHtml::_('script', 'template.js', array('version' => 'auto', 'relative' => true));
@@ -148,12 +150,28 @@ else
 			<!-- Header -->
 			<header class="header" role="banner">
 				<div class="header-inner clearfix">
-					<a class="brand pull-left" href="<?php echo $this->baseurl; ?>/">
-						<?php echo $logo; ?>
-						<?php if ($this->params->get('sitedescription')) : ?>
-							<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription'), ENT_COMPAT, 'UTF-8') . '</div>'; ?>
-						<?php endif; ?>
-					</a>
+				<div id="myCarousel" class="carousel slide">
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+				    <div class="active item">
+						<img src="https://cdn.cms.prod.nypr.digital/images/racoons-32.2e16d0ba.fill-1200x650.jpg">
+					</div>
+				    <div class="item">
+						<img src="https://cdn.cms.prod.nypr.digital/images/racoons-32.2e16d0ba.fill-1200x650.jpg">
+					</div>
+				    <div class="item">
+						<img src="https://cdn.cms.prod.nypr.digital/images/racoons-32.2e16d0ba.fill-1200x650.jpg">
+					</div>
+				  </div>
+				  <!-- Carousel nav -->
+				  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div>
 					<div class="header-search pull-right">
 						<jdoc:include type="modules" name="position-0" style="none" />
 					</div>
