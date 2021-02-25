@@ -141,6 +141,19 @@ body.site.fluid{
 	border-bottom: 0px solid rgba(0, 0, 0, 0.075);
 	margin-bottom: 0px;
 
+	.nav-button {
+		background-color: @signaturecolor;
+		color: @white;
+		font-size: 18pt;
+		font-weight: bold;
+		display: none;
+		padding: 4px;
+		margin-bottom: 4px;
+		&:hover {
+			background-color: lighten(@signaturecolor, 10%);
+		}
+	}
+
 	.menu {
 		display: flex;
 	}
@@ -177,19 +190,22 @@ body.site.fluid{
 		}
 	}
 }
-
+@media (min-width: 980px) {
+	.navigation .collapse {
+		display: block;
+	}
+}
 .navigation .nav-pills{
 	margin-bottom: 0;
 }
 
 .sidebar-nav {
 	.menu {
-		
+		display: block;
 	}
 	.menu > li {
 		font-size: 12pt;
 		background-color: @signaturecolor;
-
 		& > a {
 			color: @white;
 			display: block;
@@ -632,6 +648,7 @@ figcaption {
 		padding: 10px;
 	}
 }
+
 @media (max-width: 979px) {
 	.nav-collapse.in.collapse {
 		overflow: visible;
@@ -650,7 +667,9 @@ figcaption {
 		.menu {
 			display: block;
 		}
-	
+		.nav-button {
+			display: inline-block;
+		}
 		.menu > li {
 			margin-bottom: 5px;
 			background-color: @signaturecolor;

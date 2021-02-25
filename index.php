@@ -39,16 +39,17 @@ else
 
 // Add JavaScript Frameworks
 JHtml::_('jquery.framework');
-JHtml::_('bootstrap.framework');
 
 
 // Add template js
+JHtml::_('script', 'bootstrap.bundle.min.js', array('version' => 'auto', 'relative' => true));
 JHtml::_('script', 'template.js', array('version' => 'auto', 'relative' => true));
 
 // Add html5 shiv
 JHtml::_('script', 'jui/html5.js', array('version' => 'auto', 'relative' => true, 'conditional' => 'lt IE 9'));
 
 // Add Stylesheets
+JHtml::_('stylesheet', 'bootstrap.min.css', array('version' => 'auto', 'relative' => true));
 JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
 
 // Use of Google Font
@@ -150,28 +151,6 @@ else
 			<!-- Header -->
 			<header class="header" role="banner">
 				<div class="header-inner clearfix">
-				<div id="myCarousel" class="carousel slide">
-				  <ol class="carousel-indicators">
-				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#myCarousel" data-slide-to="1"></li>
-				    <li data-target="#myCarousel" data-slide-to="2"></li>
-				  </ol>
-				  <!-- Carousel items -->
-				  <div class="carousel-inner">
-				    <div class="active item">
-						<img src="https://cdn.cms.prod.nypr.digital/images/racoons-32.2e16d0ba.fill-1200x650.jpg">
-					</div>
-				    <div class="item">
-						<img src="https://cdn.cms.prod.nypr.digital/images/racoons-32.2e16d0ba.fill-1200x650.jpg">
-					</div>
-				    <div class="item">
-						<img src="https://cdn.cms.prod.nypr.digital/images/racoons-32.2e16d0ba.fill-1200x650.jpg">
-					</div>
-				  </div>
-				  <!-- Carousel nav -->
-				  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-				  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-				</div>
 					<div class="header-search pull-right">
 						<jdoc:include type="modules" name="position-0" style="none" />
 					</div>
@@ -179,16 +158,11 @@ else
 			</header>
 			<?php if ($this->countModules('position-1')) : ?>
 				<nav class="navigation" role="navigation">
-					<div class="navbar pull-left">
-						<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-							<span class="element-invisible"><?php echo JTEXT::_('TPL_PROTOSTAR_TOGGLE_MENU'); ?></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</a>
-					</div>
-					<div class="nav-collapse">
-						<jdoc:include type="modules" name="position-1" style="none" />
+					<a class="nav-button" data-bs-toggle="collapse" href="#navcollapse" role="button" aria-expanded="false" aria-controls="navcollapse">
+						<i class="bi bi-list"></i>
+  					</a>
+					<div class="collapse show" id="navcollapse">
+						<jdoc:include type="modules" name="position-1" style="none" /></div>
 					</div>
 				</nav>
 			<?php endif; ?>

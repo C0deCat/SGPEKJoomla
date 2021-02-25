@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
 article,
 aside,
 details,
@@ -2193,7 +2194,7 @@ table th[class*="span"],
 }
 .collapse {
 	position: relative;
-	height: 0;
+	height: auto;
 	overflow: hidden;
 	-webkit-transition: height .35s ease;
 	-moz-transition: height .35s ease;
@@ -7180,6 +7181,18 @@ body.site.fluid {
 	border-bottom: 0px solid rgba(0,0,0,0.075);
 	margin-bottom: 0px;
 }
+.navigation .nav-button {
+	background-color: #4194D1;
+	color: #fff;
+	font-size: 18pt;
+	font-weight: bold;
+	display: none;
+	padding: 4px;
+	margin-bottom: 4px;
+}
+.navigation .nav-button:hover {
+	background-color: #6aabdb;
+}
 .navigation .menu {
 	display: flex;
 }
@@ -7214,8 +7227,16 @@ body.site.fluid {
 .navigation .menu > li:last-child > a:hover {
 	border-radius: 0 10px 10px 0;
 }
+@media (min-width: 980px) {
+	.navigation .collapse {
+		display: block;
+	}
+}
 .navigation .nav-pills {
 	margin-bottom: 0;
+}
+.sidebar-nav .menu {
+	display: block;
 }
 .sidebar-nav .menu > li {
 	font-size: 12pt;
@@ -7675,6 +7696,9 @@ figcaption {
 	}
 	.navigation .menu {
 		display: block;
+	}
+	.navigation .nav-button {
+		display: inline-block;
 	}
 	.navigation .menu > li {
 		margin-bottom: 5px;
