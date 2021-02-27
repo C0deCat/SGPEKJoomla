@@ -2194,7 +2194,7 @@ table th[class*="span"],
 }
 .collapse {
 	position: relative;
-	height: auto;
+	height: 0;
 	overflow: hidden;
 	-webkit-transition: height .35s ease;
 	-moz-transition: height .35s ease;
@@ -7181,6 +7181,10 @@ body.site.fluid {
 	border-bottom: 0px solid rgba(0,0,0,0.075);
 	margin-bottom: 0px;
 }
+.navigation .collapse {
+	overflow: visible;
+	height: auto;
+}
 .navigation .nav-button {
 	background-color: #4194D1;
 	color: #fff;
@@ -7269,6 +7273,9 @@ body.site.fluid {
 	font-size: 11pt;
 	padding: 4px;
 	border-left: 3px solid #4194D1;
+}
+.btn.dropdown-toggle::after {
+	content: none;
 }
 .hero-unit {
 	background-color: #08C;
