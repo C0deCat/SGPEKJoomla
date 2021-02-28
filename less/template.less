@@ -45,7 +45,7 @@
 @import "../../../media/jui/less/labels-badges.less";
 @import "../../../media/jui/less/progress-bars.less";
 @import "../../../media/jui/less/accordion.less";
-@import "../../../media/jui/less/carousel.less";
+//@import "../../../media/jui/less/carousel.less";
 @import "../../../media/jui/less/hero-unit.less";
 
 // Utility classes
@@ -92,7 +92,7 @@ body {
 }
 body.site{
 	border-top:3px solid #0088cc;
-	padding: 20px;
+	padding: 0;
 	background-color: #f4f6f7;
 }
 body.site.fluid{
@@ -139,7 +139,7 @@ body.site.fluid{
 	padding: 5px 0;
 	border-top: 0px solid rgba(0, 0, 0, 0.075);
 	border-bottom: 0px solid rgba(0, 0, 0, 0.075);
-	margin-bottom: 0px;
+	margin: 0 10px 0 10px;
 	.collapse {
 		overflow: visible;
 		height: auto;
@@ -269,6 +269,12 @@ body.site.fluid{
 	-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
 	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
 }
+.body > .container-fluid {
+	padding: 0;
+}
+.body > .row-fluid {
+	padding: 10px;
+}
 /* Wells */
 .well .page-header{
 	margin: 0px 0px 5px 0px;
@@ -290,6 +296,9 @@ h6 { font-size: 12px; line-height: 14px; }
 	padding-bottom: 17px;
 	margin: 20px 0 18px 0;
 	border-bottom: 1px solid #eeeeee;
+}
+.header-search {
+	margin: 10px 10px 0 10px;
 }
 /* Single Item */
 p {
