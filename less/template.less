@@ -91,7 +91,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 body.site{
-	border-top:3px solid #0088cc;
 	padding: 0;
 	background-color: #f4f6f7;
 }
@@ -133,6 +132,10 @@ body.site.fluid{
 }
 .header .finder .btn{
 	margin-top: 0px;
+}
+
+.header-search {
+	z-index: 999;
 }
 /* Nav */
 .navigation{
@@ -240,6 +243,41 @@ body.site.fluid{
 		border-left: 3px solid @signaturecolor;
 	}
 }
+/* search */
+.header-search .search {
+	background-color: @signaturecolor;
+	.search-query {
+		border-radius: 0;
+		font-size: 13pt;
+		font-weight: bold;
+		padding: 10px 15px 10px 15px;
+		display: block;
+		width: 800px;
+	}
+	form {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+	}
+	.button {
+		border-radius: 0;
+		font-size: 13pt;
+		font-weight: bold;
+		border: none;
+		background-color: @signatureaccent;
+		&:hover {
+			background-color: darken(@signatureaccent, 10%);
+		}
+	}
+}
+
+main .search {
+	input[type="text"] {
+		padding: 5px;
+		height: auto
+		;
+	}
+}
 /* custom toggle button */
 .btn.dropdown-toggle{
 	&::after {
@@ -298,7 +336,7 @@ h6 { font-size: 12px; line-height: 14px; }
 	border-bottom: 1px solid #eeeeee;
 }
 .header-search {
-	margin: 10px 10px 0 10px;
+	margin: 0;
 }
 /* Single Item */
 p {
@@ -549,6 +587,17 @@ figcaption {
 	.blog-item .pull-left.item-image {
 		margin:0 0 18px 0;
 		float:none;
+	}
+}
+
+@media (max-width: 880px) {
+	.header-search .search-query {
+		width: 90%;
+	}
+	.header .carousel {
+		display: none
+		
+		;
 	}
 }
 @media (max-width: 768px) {

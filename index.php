@@ -72,7 +72,6 @@ if ($this->params->get('templateColor'))
 {
 	$this->addStyleDeclaration('
 	body.site {
-		border-top: 3px solid ' . $this->params->get('templateColor') . ';
 		background-color: ' . $this->params->get('templateBackgroundColor') . ';
 	}
 	.nav-list > .active > a,
@@ -151,6 +150,9 @@ else
 			<!-- Header -->
 			<header class="header" role="banner">
 				<div class="header-inner clearfix">
+					<div class="header-search">
+						<jdoc:include type="modules" name="position-0" style="none" />
+					</div>
 					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 					  <div class="carousel-indicators">
 					    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -188,9 +190,6 @@ else
 					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 					    <span class="visually-hidden">Next</span>
 					  </button>
-					</div>
-					<div class="header-search pull-right">
-						<jdoc:include type="modules" name="position-0" style="none" />
 					</div>
 				</div>
 			</header>
