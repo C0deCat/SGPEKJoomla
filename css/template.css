@@ -7112,6 +7112,9 @@ body.site.fluid {
 		display: block;
 	}
 }
+.header .carousel {
+	max-height: none;
+}
 .navigation .nav-pills {
 	margin-bottom: 0;
 }
