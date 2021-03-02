@@ -201,8 +201,8 @@ else
   					</a>
 					<div class="collapse show" id="navcollapse">
 						<jdoc:include type="modules" name="position-1" style="none" />
-						<a id="specialButton" href="#" class="bi bi-eye blind-mod-btn"></a>
 					</div>
+					<a id="specialButton" href="#" class="bi bi-eye blind-mod-btn"></a>
 				</nav>
 			<?php endif; ?>
 			<jdoc:include type="modules" name="banner" style="xhtml" />

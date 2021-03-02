@@ -143,6 +143,9 @@ body.site.fluid{
 	border-top: 0px solid rgba(0, 0, 0, 0.075);
 	border-bottom: 0px solid rgba(0, 0, 0, 0.075);
 	margin: 0 0 0 0;
+	display: flex;
+	background-color: @signaturecolor;
+	justify-content: space-between;
 
 	.nav {
 		margin-bottom: 0;
@@ -210,9 +213,7 @@ body.site.fluid{
 }
 @media (min-width: 980px) {
 	.navigation .collapse {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		display: block;
 	}
 }
 
