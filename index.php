@@ -42,6 +42,7 @@ JHtml::_('jquery.framework');
 
 
 // Add template js
+JHtml::_('script', 'uhpv-full.min.js', array('version' => 'auto', 'relative' => true));
 JHtml::_('script', 'bootstrap.bundle.min.js', array('version' => 'auto', 'relative' => true));
 JHtml::_('script', 'template.js', array('version' => 'auto', 'relative' => true));
 
@@ -199,7 +200,8 @@ else
 						<i class="bi bi-list"></i>
   					</a>
 					<div class="collapse show" id="navcollapse">
-						<jdoc:include type="modules" name="position-1" style="none" /></div>
+						<jdoc:include type="modules" name="position-1" style="none" />
+						<a id="specialButton" href="#" class="bi bi-eye blind-mod-btn"></a>
 					</div>
 				</nav>
 			<?php endif; ?>
