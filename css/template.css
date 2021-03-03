@@ -7051,6 +7051,9 @@ body.site.fluid {
 .header-search {
 	z-index: 999;
 }
+main > .blog-featured {
+	margin: 0px 10px;
+}
 .navigation {
 	padding: 0;
 	border-top: 0px solid rgba(0,0,0,0.075);
@@ -7129,6 +7132,9 @@ body.site.fluid {
 }
 .navigation .nav-pills {
 	margin-bottom: 0;
+}
+.sidebar-nav {
+	margin: 10px 10px 0px 10px;
 }
 .sidebar-nav .menu {
 	display: block;
@@ -7639,6 +7645,20 @@ figcaption {
 	.nav-collapse .nav > li.active > a:hover {
 		color: #555;
 	}
+	.navigation {
+		background-color: transparent;
+		display: block;
+	}
+	.navigation .blind-mod-btn {
+		background-color: #4194D1;
+		display: inline-block;
+		padding: 6px;
+		border: none;
+		margin: 5px;
+	}
+	.navigation .blind-mod-btn:hover {
+		background-color: #6aabdb;
+	}
 	.navigation > div {
 		background-color: transparent;
 	}
@@ -7647,6 +7667,7 @@ figcaption {
 	}
 	.navigation .nav-button {
 		display: inline-block;
+		margin: 5px 0px 5px 5px;
 	}
 	.navigation .menu > li {
 		margin-bottom: 5px;

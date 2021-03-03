@@ -137,6 +137,10 @@ body.site.fluid{
 .header-search {
 	z-index: 999;
 }
+/* Main */
+main > .blog-featured {
+	margin: 0px 10px;
+}
 /* Nav */
 .navigation{
 	padding: 0;
@@ -226,6 +230,7 @@ body.site.fluid{
 }
 
 .sidebar-nav {
+	margin: 10px 10px 0px 10px;
 	.menu {
 		display: block;
 	}
@@ -751,6 +756,18 @@ figcaption {
 
 	//changing navigation
 	.navigation{
+		background-color: transparent;
+		display: block;
+		.blind-mod-btn {
+			background-color: @signaturecolor;
+			display: inline-block;
+			padding: 6px;
+			border: none;
+			margin: 5px;
+			&:hover {
+				background-color: lighten(@signaturecolor, 10%);
+			}
+		}
 		& > div {
 			background-color: transparent;
 		}
@@ -759,6 +776,7 @@ figcaption {
 		}
 		.nav-button {
 			display: inline-block;
+			margin: 5px 0px 5px 5px;
 		}
 		.menu > li {
 			margin-bottom: 5px;
