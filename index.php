@@ -248,6 +248,11 @@ else
 			<p>
 				&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
 			</p>
+			<p>ВКонтакте: <a>https://vk.com/official_page_sgpek</a></p>
+			<p>Email: <a href="mailto:smt@moris.ru">smt@moris.ru</a></p>
+			<p>Адрес: 430005 Республика Мордовия, г. САРАНСК, пр. Ленина, 24</p>
+			<p>Телефон: 8(8342) 24-79-18</p>
+			<p></p>
 		</div>
 	</footer>
 	<jdoc:include type="modules" name="debug" style="none" />
