@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap');
 article,
 aside,
 details,
@@ -7136,12 +7137,26 @@ main > .blog-featured {
 	margin: 5px;
 }
 .footer .contacts-flex {
-	background-color: #4194D1;
+	background-color: #648fae;
 	display: flex;
 	flex-wrap: wrap;
+	color: #ffffff;
 }
 .footer .contacts-flex .flex-el {
-	margin: 5px;
+	margin: 15px 15px 0 15px;
+	font-size: 11pt;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 200;
+}
+.footer .contacts-flex .flex-el a {
+	color: #fff;
+}
+.footer .contacts-flex .flex-el .bi {
+	font-size: 15pt;
+	vertical-align: bottom;
+}
+.footer .contacts-flex .flex-el:last-child {
+	margin: 5px 5px 5px 15px;
 }
 .footer .contacts-flex .break {
 	flex-basis: 100%;

@@ -247,10 +247,10 @@ else
 			<div class="contacts-flex">
 				<div class="break"></div>
 
-				<div class="flex-el">ВКонтакте: <a href="https://vk.com/official_page_sgpek">vk.com/official_page_sgpek</a></div>
-				<div class="flex-el">Email: <a href="mailto:smt@moris.ru">smt@moris.ru</a></div>
-				<div class="flex-el">Адрес: 430005 Республика Мордовия, г. САРАНСК, пр. Ленина, 24</div>
-				<div class="flex-el">Телефон: 8(8342) 24-79-18</div>
+				<div class="flex-el"><span>VK</span> <a href="https://vk.com/official_page_sgpek">official_page_sgpek</a></div>
+				<div class="flex-el"><i class="bi bi-mailbox2"></i> <a href="mailto:smt@moris.ru">smt@moris.ru</a></div>
+				<div class="flex-el"><i class="bi bi-house-fill"></i> 430005 Республика Мордовия, г. САРАНСК, пр. Ленина, 24</div>
+				<div class="flex-el"><i class="bi bi-telephone-fill"></i> 8(8342) 24-79-18</div>
 
 				<div class="break"></div>
 

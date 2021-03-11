@@ -232,12 +232,25 @@ main > .blog-featured {
 		margin: 5px;
 	}
 	.contacts-flex {
-		background-color: @signaturecolor;
+		background-color: desaturate(@signaturecolor, 30%);
 		display: flex;
 		flex-wrap: wrap;
-		
+		color: desaturate(@white, 30%);;
 		.flex-el {
-			margin: 5px;
+			margin: 15px 15px 0 15px;
+			font-size: 11pt;
+			font-family: 'Roboto Slab', serif;
+			font-weight: 200;
+			a {
+				color: @white;
+			}
+			.bi {
+				font-size: 15pt;
+				vertical-align: bottom;
+			}
+			&:last-child {
+				margin: 5px 5px 5px 15px;
+			}
 		}
 
 		.break {
