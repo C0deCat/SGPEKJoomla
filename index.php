@@ -238,21 +238,26 @@ else
 	<!-- Footer -->
 	<footer class="footer" role="contentinfo">
 		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
-			<hr />
 			<jdoc:include type="modules" name="footer" style="none" />
-			<p class="pull-right">
+			<div class="backtop">
 				<a href="#top" id="back-top">
 					<?php echo JText::_('TPL_PROTOSTAR_BACKTOTOP'); ?>
 				</a>
-			</p>
-			<p>
-				&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
-			</p>
-			<p>ВКонтакте: <a>https://vk.com/official_page_sgpek</a></p>
-			<p>Email: <a href="mailto:smt@moris.ru">smt@moris.ru</a></p>
-			<p>Адрес: 430005 Республика Мордовия, г. САРАНСК, пр. Ленина, 24</p>
-			<p>Телефон: 8(8342) 24-79-18</p>
-			<p></p>
+			</div>
+			<div class="contacts-flex">
+				<div class="break"></div>
+
+				<div class="flex-el">ВКонтакте: <a href="https://vk.com/official_page_sgpek">vk.com/official_page_sgpek</a></div>
+				<div class="flex-el">Email: <a href="mailto:smt@moris.ru">smt@moris.ru</a></div>
+				<div class="flex-el">Адрес: 430005 Республика Мордовия, г. САРАНСК, пр. Ленина, 24</div>
+				<div class="flex-el">Телефон: 8(8342) 24-79-18</div>
+
+				<div class="break"></div>
+
+				<div class="flex-el">
+					&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<jdoc:include type="modules" name="debug" style="none" />

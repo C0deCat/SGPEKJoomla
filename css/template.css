@@ -7127,6 +7127,25 @@ main > .blog-featured {
 		display: block;
 	}
 }
+.footer > div {
+	padding-left: 0;
+	padding-right: 0;
+}
+.footer .backtop {
+	text-align: right;
+	margin: 5px;
+}
+.footer .contacts-flex {
+	background-color: #4194D1;
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer .contacts-flex .flex-el {
+	margin: 5px;
+}
+.footer .contacts-flex .break {
+	flex-basis: 100%;
+}
 .header .carousel {
 	max-height: none;
 }

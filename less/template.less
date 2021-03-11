@@ -221,6 +221,31 @@ main > .blog-featured {
 	}
 }
 
+/* Footer */
+.footer {
+	& > div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.backtop {
+		text-align: right;
+		margin: 5px;
+	}
+	.contacts-flex {
+		background-color: @signaturecolor;
+		display: flex;
+		flex-wrap: wrap;
+		
+		.flex-el {
+			margin: 5px;
+		}
+
+		.break {
+			flex-basis: 100%;
+		}
+	}
+}
+
 .header .carousel {
 	max-height: none;
 }
