@@ -151,12 +151,14 @@ else
 			<!-- Header -->
 			<header class="header" role="banner">
 				<div class="header-inner clearfix">
-					<a class="college-logo">
-						<img src="<?php echo JUri::base(true).'/templates/'.$app->getTemplate().'/images/Emblema.jpg' ?>" class="" alt="...">
-						<div>ГБПОУ РМ "Саранский государственный промышленно-экономический колледж"</div>
-					</a>
-					<div class="header-search">
-						<jdoc:include type="modules" name="position-0" style="none" />
+					<div class="topper">
+						<a class="college-logo">
+							<img src="<?php echo JUri::base(true).'/templates/'.$app->getTemplate().'/images/Emblema.jpg' ?>" class="" alt="...">
+							<div>ГБПОУ РМ "Саранский государственный промышленно-экономический колледж"</div>
+						</a>
+						<div class="header-search">
+							<jdoc:include type="modules" name="position-0" style="none" />
+						</div>
 					</div>
 					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 					  <div class="carousel-indicators">

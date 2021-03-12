@@ -7055,6 +7055,25 @@ body.site.fluid {
 main > .blog-featured {
 	margin: 0px 10px;
 }
+.topper {
+	display: flex;
+	background-color: #4194D1;
+	align-items: flex-end;
+}
+.topper .college-logo {
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12pt;
+	display: flex;
+	max-width: 300px;
+	align-items: center;
+}
+.topper .college-logo img {
+	width: 50px;
+}
+.topper .college-logo div {
+	margin: 0 5px;
+}
 .navigation {
 	padding: 0;
 	border-top: 0px solid rgba(0,0,0,0.075);
@@ -7063,15 +7082,6 @@ main > .blog-featured {
 	display: flex;
 	background-color: #4194D1;
 	justify-content: space-between;
-}
-.navigation .college-logo {
-	color: #fff;
-	font-family: 'Oswald', sans-serif;
-	font-size: 12pt;
-	display: flex;
-}
-.navigation .college-logo img {
-	width: 50px;
 }
 .navigation .nav {
 	margin-bottom: 0;
