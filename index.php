@@ -151,6 +151,10 @@ else
 			<!-- Header -->
 			<header class="header" role="banner">
 				<div class="header-inner clearfix">
+					<a class="college-logo">
+						<img src="<?php echo JUri::base(true).'/templates/'.$app->getTemplate().'/images/Emblema.jpg' ?>" class="" alt="...">
+						<div>ГБПОУ РМ "Саранский государственный промышленно-экономический колледж"</div>
+					</a>
 					<div class="header-search">
 						<jdoc:include type="modules" name="position-0" style="none" />
 					</div>
@@ -247,7 +251,7 @@ else
 			<div class="contacts-flex">
 				<div class="break"></div>
 
-				<div class="flex-el"><span>VK</span> <a href="https://vk.com/official_page_sgpek">official_page_sgpek</a></div>
+				<div class="flex-el"><i class="vk-icon"></i> <a href="https://vk.com/official_page_sgpek">official_page_sgpek</a></div>
 				<div class="flex-el"><i class="bi bi-mailbox2"></i> <a href="mailto:smt@moris.ru">smt@moris.ru</a></div>
 				<div class="flex-el"><i class="bi bi-house-fill"></i> 430005 Республика Мордовия, г. САРАНСК, пр. Ленина, 24</div>
 				<div class="flex-el"><i class="bi bi-telephone-fill"></i> 8(8342) 24-79-18</div>

@@ -150,6 +150,16 @@ main > .blog-featured {
 	display: flex;
 	background-color: @signaturecolor;
 	justify-content: space-between;
+	
+	.college-logo {
+		color: @white;
+		font-family: 'Oswald', sans-serif;
+		font-size: 12pt;
+		display: flex;
+		img {
+			width: 50px;
+		}
+	}
 
 	.nav {
 		margin-bottom: 0;
@@ -247,6 +257,14 @@ main > .blog-featured {
 			.bi {
 				font-size: 15pt;
 				vertical-align: bottom;
+			}
+			.vk-icon {
+				vertical-align: text-top;
+			}
+			.vk-icon::before {
+				width: 20px;
+				display: inline-block;
+				content: url("../img/VK_Black&white_Compact_Logo.svg");
 			}
 			&:last-child {
 				margin: 5px 5px 5px 15px;
