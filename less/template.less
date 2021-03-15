@@ -146,7 +146,9 @@ main > .blog-featured {
 	display: flex;
 	background-color: @signaturecolor;
 	align-items: flex-end;
+	justify-content: space-between;
 	.college-logo {
+		flex-shrink: 2;
 		color: @white;
 		font-family: 'Oswald', sans-serif;
 		font-size: 12pt;
@@ -159,6 +161,15 @@ main > .blog-featured {
 		div {
 			margin: 0 5px;
 		}
+	}
+	.thumb {
+		flex-shrink: 2;
+		width: 300px;
+		height: 100%;
+		max-width: 300px;
+	}
+	.header-search {
+		flex-shrink: 1;
 	}
 }
 /* Nav */
@@ -335,29 +346,32 @@ main > .blog-featured {
 	}
 }
 /* search */
-.header-search .search {
-	background-color: @signaturecolor;
-	.search-query {
-		border-radius: 0;
-		font-size: 13pt;
-		font-weight: bold;
-		padding: 10px 15px 10px 15px;
-		display: block;
-		width: 800px;
-	}
-	form {
-		margin: 0;
-		display: flex;
-		justify-content: center;
-	}
-	.button {
-		border-radius: 0;
-		font-size: 13pt;
-		font-weight: bold;
-		border: none;
-		background-color: @signatureaccent;
-		&:hover {
-			background-color: darken(@signatureaccent, 10%);
+.header-search {
+	width: 800px;
+	.search {
+		background-color: @signaturecolor;
+		.search-query {
+			border-radius: 0;
+			font-size: 13pt;
+			font-weight: bold;
+			padding: 10px 15px 10px 15px;
+			display: block;
+			width: 100%;
+		}
+		form {
+			margin: 0;
+			display: flex;
+			justify-content: center;
+		}
+		.button {
+			border-radius: 0;
+			font-size: 13pt;
+			font-weight: bold;
+			border: none;
+			background-color: @signatureaccent;
+			&:hover {
+				background-color: darken(@signatureaccent, 10%);
+			}
 		}
 	}
 }
@@ -427,7 +441,6 @@ h6 { font-size: 12px; line-height: 14px; }
 	border-bottom: 1px solid #eeeeee;
 }
 .header-search {
-	margin: 0;
 }
 /* Single Item */
 p {
@@ -681,10 +694,23 @@ figcaption {
 	}
 }
 
-@media (max-width: 880px) {
-	.header-search .search-query {
-		width: 90%;
+@media (max-width: 979px) {
+	.topper {
+		justify-content: center;
+		flex-wrap: wrap;
+		.college-logo {
+			max-width: none;
+			width: 100%;
+			font-size: 15pt;
+		}
+		.header-search {
+			width: 100%;
+		}
+		.thumb {
+			display: none;
+		}
 	}
+	
 	.header .carousel {
 		display: none
 		

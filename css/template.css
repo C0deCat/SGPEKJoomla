@@ -7059,8 +7059,10 @@ main > .blog-featured {
 	display: flex;
 	background-color: #4194D1;
 	align-items: flex-end;
+	justify-content: space-between;
 }
 .topper .college-logo {
+	flex-shrink: 2;
 	color: #fff;
 	font-family: 'Oswald', sans-serif;
 	font-size: 12pt;
@@ -7073,6 +7075,15 @@ main > .blog-featured {
 }
 .topper .college-logo div {
 	margin: 0 5px;
+}
+.topper .thumb {
+	flex-shrink: 2;
+	width: 300px;
+	height: 100%;
+	max-width: 300px;
+}
+.topper .header-search {
+	flex-shrink: 1;
 }
 .navigation {
 	padding: 0;
@@ -7232,6 +7243,9 @@ main > .blog-featured {
 	padding: 4px;
 	border-left: 3px solid #4194D1;
 }
+.header-search {
+	width: 800px;
+}
 .header-search .search {
 	background-color: #4194D1;
 }
@@ -7241,7 +7255,7 @@ main > .blog-featured {
 	font-weight: bold;
 	padding: 10px 15px 10px 15px;
 	display: block;
-	width: 800px;
+	width: 100%;
 }
 .header-search .search form {
 	margin: 0;
@@ -7332,9 +7346,6 @@ h6 {
 	padding-bottom: 17px;
 	margin: 20px 0 18px 0;
 	border-bottom: 1px solid #eeeeee;
-}
-.header-search {
-	margin: 0;
 }
 p {
 	word-wrap: break-word;
@@ -7570,9 +7581,21 @@ figcaption {
 		float: none;
 	}
 }
-@media (max-width: 880px) {
-	.header-search .search-query {
-		width: 90%;
+@media (max-width: 979px) {
+	.topper {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.topper .college-logo {
+		max-width: none;
+		width: 100%;
+		font-size: 15pt;
+	}
+	.topper .header-search {
+		width: 100%;
+	}
+	.topper .thumb {
+		display: none;
 	}
 	.header .carousel {
 		display: none;
