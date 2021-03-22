@@ -87,6 +87,13 @@ if ($this->params->get('templateColor'))
 	}');
 }
 
+//$carousel_imgs = array();
+//for ($i = 1; $i <= 5; $i++) {
+//	if($this->params->get('carousel_'+$i)) {
+//		
+//	}
+//}
+
 // Check for a custom CSS file
 JHtml::_('stylesheet', 'user.css', array('version' => 'auto', 'relative' => true));
 
@@ -152,7 +159,7 @@ else
 			<header class="header" role="banner">
 				<div class="header-inner clearfix">
 					<div class="topper">
-						<a class="college-logo">
+						<a class="college-logo" href="/">
 							<img src="<?php echo JUri::base(true).'/templates/'.$app->getTemplate().'/images/Emblema.jpg' ?>" class="" alt="...">
 							<div>ГБПОУ РМ "Саранский государственный промышленно-экономический колледж"</div>
 						</a>

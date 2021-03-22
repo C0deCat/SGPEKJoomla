@@ -130,6 +130,47 @@
 					<option value="1">TPL_PROTOSTAR_FLUID</option>
 					<option value="0">TPL_PROTOSTAR_STATIC</option>
 				</field>
+
+				<field 
+					name="carousel_1" 
+					type="media" 
+					label="CAROUSEL1"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_2" 
+					type="media" 
+					label="CAROUSEL2"
+					description="TPL_PROTOSTAR_CAROUSEL2_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_3" 
+					type="media" 
+					label="CAROUSEL3"
+					description="TPL_PROTOSTAR_CAROUSEL3_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_4" 
+					type="media" 
+					label="CAROUSEL4"
+					description="TPL_PROTOSTAR_CAROUSEL4_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_5" 
+					type="media" 
+					label="CAROUSEL5"
+					description="TPL_PROTOSTAR_CAROUSEL5_DESC" 
+					class="" 
+					default=""
+				/>
 			</fieldset>
 		</fields>
 	</config>
