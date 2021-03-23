@@ -87,12 +87,14 @@ if ($this->params->get('templateColor'))
 	}');
 }
 
-//$carousel_imgs = array();
-//for ($i = 1; $i <= 5; $i++) {
-//	if($this->params->get('carousel_'+$i)) {
-//		
-//	}
-//}
+$carousel_imgs = array();
+for ($i = 1; $i <= 5; $i++) {
+	if($this->params->get('carousel_'.$i)) {
+		$carousel_imgs[$i-1][0] = '<img src="'.htmlspecialchars(JUri::root().$this->params->get('carousel_'.$i), ENT_QUOTES).'" class="d-block w-100" alt="...">';
+		$carousel_imgs[$i-1][1] = 'Header';
+		$carousel_imgs[$i-1][2] = 'CaptionCaptionCaptionCaptionCaption';
+	}
+}
 
 // Check for a custom CSS file
 JHtml::_('stylesheet', 'user.css', array('version' => 'auto', 'relative' => true));
