@@ -140,6 +140,23 @@
 					default=""
 				/>
 				<field 
+					name="carousel_label_1" 
+					type="text" 
+					label="CAROUSEL LABEL 1"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_text_1" 
+					type="text" 
+					label="CAROUSEL TEXT 1"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+
+				<field 
 					name="carousel_2" 
 					type="media" 
 					label="CAROUSEL2"
@@ -147,6 +164,23 @@
 					class="" 
 					default=""
 				/>
+				<field 
+					name="carousel_label_2" 
+					type="text" 
+					label="CAROUSEL LABEL 2"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_text_2" 
+					type="text" 
+					label="CAROUSEL TEXT 2"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+
 				<field 
 					name="carousel_3" 
 					type="media" 
@@ -156,6 +190,23 @@
 					default=""
 				/>
 				<field 
+					name="carousel_label_3" 
+					type="text" 
+					label="CAROUSEL LABEL 3"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_text_3" 
+					type="text" 
+					label="CAROUSEL TEXT 3"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+
+				<field 
 					name="carousel_4" 
 					type="media" 
 					label="CAROUSEL4"
@@ -164,10 +215,43 @@
 					default=""
 				/>
 				<field 
+					name="carousel_label_4" 
+					type="text" 
+					label="CAROUSEL LABEL 1"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_text_4" 
+					type="text" 
+					label="CAROUSEL TEXT 1"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+
+				<field 
 					name="carousel_5" 
 					type="media" 
 					label="CAROUSEL5"
 					description="TPL_PROTOSTAR_CAROUSEL5_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_label_5" 
+					type="text" 
+					label="CAROUSEL LABEL 1"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
+					class="" 
+					default=""
+				/>
+				<field 
+					name="carousel_text_5" 
+					type="text" 
+					label="CAROUSEL TEXT 1"
+					description="TPL_PROTOSTAR_CAROUSEL1_DESC" 
 					class="" 
 					default=""
 				/>

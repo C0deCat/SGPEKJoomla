@@ -91,8 +91,8 @@ $carousel_imgs = array();
 for ($i = 1; $i <= 5; $i++) {
 	if($this->params->get('carousel_'.$i)) {
 		$carousel_imgs[$i-1][0] = '<img src="'.htmlspecialchars(JUri::root().$this->params->get('carousel_'.$i), ENT_QUOTES).'" class="d-block w-100" alt="...">';
-		$carousel_imgs[$i-1][1] = 'Header';
-		$carousel_imgs[$i-1][2] = 'CaptionCaptionCaptionCaptionCaption';
+		$carousel_imgs[$i-1][1] = '<h5>'.htmlspecialchars($this->params->get('carousel_label_'.$i), ENT_QUOTES).'</h5>';
+		$carousel_imgs[$i-1][2] = '<p>'.htmlspecialchars($this->params->get('carousel_text_'.$i), ENT_QUOTES).'</p>';
 	}
 }
 
@@ -170,35 +170,38 @@ else
 						</div>
 						<div class="thumb"></div>
 					</div>
+					<?php if (count($carousel_imgs) > 0) : ?>
 					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-					  <div class="carousel-indicators">
-					    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					  </div>
-					  <div class="carousel-inner">
-					    <div class="carousel-item active">
-					      <img src="<?php echo JUri::base(true).'/templates/'.$app->getTemplate().'/images/CarouselPlaceholder.png' ?>" class="d-block w-100" alt="...">
-					      <div class="carousel-caption d-none d-md-block">
-					        <h5>First slide label</h5>
-					        <p>Some representative placeholder content for the first slide.</p>
-					      </div>
-					    </div>
-					    <div class="carousel-item">
-					      <img src="<?php echo JUri::base(true).'/templates/'.$app->getTemplate().'/images/CarouselPlaceholder.png' ?>" class="d-block w-100" alt="...">
-					      <div class="carousel-caption d-none d-md-block">
-					        <h5>Second slide label</h5>
-					        <p>Some representative placeholder content for the second slide.</p>
-					      </div>
-					    </div>
-					    <div class="carousel-item">
-					      <img src="<?php echo JUri::base(true).'/templates/'.$app->getTemplate().'/images/CarouselPlaceholder.png' ?>" class="d-block w-100" alt="...">
-					      <div class="carousel-caption d-none d-md-block">
-					        <h5>Third slide label</h5>
-					        <p>Some representative placeholder content for the third slide.</p>
-					      </div>
-					    </div>
-					  </div>
+						<div class="carousel-indicators">
+					    <?php
+						for ($i=0; $i < count($carousel_imgs); $i++) { 
+							if ($i == 0) {
+								echo '<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>';
+							}
+							else {
+								echo '<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="'.$i.'" aria-label="Slide '.$i.'"></button>';
+							}
+						} 
+						?>
+					  	</div>
+					  	<div class="carousel-inner">
+						<?php
+						for ($i=0; $i < count($carousel_imgs); $i++) { 
+							if ($i == 0) {
+								echo '<div class="carousel-item active">';
+							}
+							else {
+								echo '<div class="carousel-item">';
+							}
+							echo $carousel_imgs[$i][0];
+							echo '<div class="carousel-caption d-none d-md-block">';
+							echo $carousel_imgs[$i][1];
+							echo $carousel_imgs[$i][2];
+							echo '</div>';
+							echo '</div>';
+						} 
+						?>
+					  	</div>
 					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
 					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					    <span class="visually-hidden">Previous</span>
@@ -208,6 +211,7 @@ else
 					    <span class="visually-hidden">Next</span>
 					  </button>
 					</div>
+					<?php endif; ?>
 				</div>
 			</header>
 			<?php if ($this->countModules('position-1')) : ?>
