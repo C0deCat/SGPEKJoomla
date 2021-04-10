@@ -7055,6 +7055,20 @@ body.site.fluid {
 main > .blog-featured {
 	margin: 0px 10px;
 }
+html,
+body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+.body {
+	flex: 1 0 auto;
+}
+.footer {
+	flex-shrink: 0;
+}
 .topper {
 	display: flex;
 	background-color: #4194D1;
@@ -7350,6 +7364,9 @@ h6 {
 .blog {
 	margin-right: 5px;
 	margin-left: 5px;
+}
+.item-page {
+	margin: 0 5px;
 }
 p {
 	word-wrap: break-word;

@@ -142,6 +142,22 @@ main > .blog-featured {
 	margin: 0px 10px;
 }
 
+/* sticky footer content */
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+.body {
+	flex: 1 0 auto;
+}
+.footer {
+	flex-shrink: 0;
+}
+
+
 .topper {
 	display: flex;
 	background-color: @signaturecolor;
@@ -448,6 +464,9 @@ h6 { font-size: 12px; line-height: 14px; }
 	margin-left: 5px;
 }
 /* Single Item */
+.item-page {
+	margin: 0 5px;
+}
 p {
 	word-wrap: break-word;
 }
