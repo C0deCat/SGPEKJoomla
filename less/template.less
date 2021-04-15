@@ -318,6 +318,12 @@ body {
 	max-height: none;
 }
 
+.createMat {
+	.header .carousel {
+		display: none;
+	}
+}
+
 .navigation .nav-pills{
 	margin-bottom: 0;
 }
@@ -455,8 +461,6 @@ h6 { font-size: 12px; line-height: 14px; }
 	padding-bottom: 17px;
 	margin: 20px 0 18px 0;
 	border-bottom: 1px solid #eeeeee;
-}
-.header-search {
 }
 
 .blog {
@@ -736,9 +740,7 @@ figcaption {
 	}
 	
 	.header .carousel {
-		display: none
-		
-		;
+		display: none;
 	}
 }
 @media (max-width: 768px) {
@@ -975,7 +977,7 @@ figcaption {
 				font-weight: normal;
 				line-height: @baseLineHeight;
 				color: @dropdownLinkColor;
-				white-space: nowrap;
+				white-space: initial;
 			}
 		}
 	}

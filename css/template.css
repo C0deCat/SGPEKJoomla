@@ -7216,6 +7216,9 @@ body {
 .header .carousel {
 	max-height: none;
 }
+.createMat .header .carousel {
+	display: none;
+}
 .navigation .nav-pills {
 	margin-bottom: 0;
 }
@@ -7858,7 +7861,7 @@ figcaption {
 		font-weight: normal;
 		line-height: 18px;
 		color: #333;
-		white-space: nowrap;
+		white-space: initial;
 	}
 }
 @media (min-width: 768px) and (max-width: 979px) {
