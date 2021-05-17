@@ -161,15 +161,14 @@ body {
 .topper {
 	display: flex;
 	background-color: @signaturecolor;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-between;
 	.college-logo {
-		flex-shrink: 2;
+		flex-shrink: 1;
 		color: @white;
-		font-family: 'Oswald', sans-serif;
-		font-size: 12pt;
+		font-family: @menuFont;
+		font-size: 17pt;
 		display: flex;
-		max-width: 300px;
 		align-items: center;
 		img {
 			width: 50px;
@@ -177,12 +176,6 @@ body {
 		div {
 			margin: 0 5px;
 		}
-	}
-	.thumb {
-		flex-shrink: 2;
-		width: 300px;
-		height: 100%;
-		max-width: 300px;
 	}
 	.header-search {
 		flex-shrink: 1;
@@ -240,7 +233,7 @@ body {
 
 	.menu > li {
 		background-color: @signaturecolor;
-		font-family: 'Oswald', sans-serif;
+		font-family: @menuFont;
 		font-size: 14pt;
 		border-right: 1px solid darken(@signaturecolor, 10%);
 		&.current {
@@ -369,14 +362,14 @@ body {
 }
 /* search */
 .header-search {
-	width: 800px;
+	width: 400px;
 	.search {
 		background-color: @signaturecolor;
 		.search-query {
 			border-radius: 0;
-			font-size: 13pt;
+			font-size: 12pt;
 			font-weight: bold;
-			padding: 10px 15px 10px 15px;
+			padding: 5px 10px 5px 10px;
 			display: block;
 			width: 100%;
 		}

@@ -168,7 +168,6 @@ else
 						<div class="header-search">
 							<jdoc:include type="modules" name="position-0" style="none" />
 						</div>
-						<div class="thumb"></div>
 					</div>
 					<?php if (count($carousel_imgs) > 0) : ?>
 					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
